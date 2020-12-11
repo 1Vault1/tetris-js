@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="game-header">
+      <div class="input-holder">
+        <input id="playerName" type="text" placeholder="Name">
+        <span id="errorM" class="error">Please enter your NAME</span>
+      </div>
+      <button id="startGame" class="btn">play</button>
+    </div>
+    <div class="holder">
+      <div class="game-holder">
+        <canvas id="tetris" width="280" height="560"></canvas>
+      </div>
+      <div class="score-holder">
+        <div class="score-header">
+          <p>SCORE: <span id="score">0</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
