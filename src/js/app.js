@@ -33,8 +33,7 @@ function init() {
 function onStartGameClick() {
   if (!valid()) {
     addClass(errorM, 'vissible');
-  }
-  if (valid()) {
+  } else {
     startGame();
     startGameEl.disabled = true;
     drop();
@@ -175,5 +174,3 @@ function changeData() {
 
   localStorage.setItem('playersList', JSON.stringify(playersList));
 }
-
-
