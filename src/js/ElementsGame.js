@@ -1,5 +1,6 @@
 import { COLS, ROWS, COLORS } from './constants';
-import { board, score, scoreEl, drawBoard, gameOver, element, randomElement, scoreHolder } from './app';
+import { board, score, scoreEl, gameOver, element, randomElement, scoreHolder, drawSquare } from './app';
+import { drawBoard } from './board';
 
 export default class Element {
   constructor(element, color, drawSquare) {

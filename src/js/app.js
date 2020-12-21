@@ -1,7 +1,8 @@
 import '../style/style.scss';
 import { COLS, ROWS, BLOCK, ELEMENTS, COLORS } from './constants';
+import { drawBoard } from './board';
 import Element from './ElementsGame';
-export { board, score, scoreEl, drawBoard, gameOver, element, randomElement, scoreHolder };
+export { board, score, scoreEl, gameOver, element, randomElement, scoreHolder, drawSquare };
 
 const canvas = document.getElementById('tetris');
 const ctx = canvas.getContext("2d");
@@ -94,14 +95,6 @@ function drawSquare(x, y, color) {
 
   ctx.strokeStyle = COLORS.white;
   ctx.strokeRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
-}
-
-function drawBoard() {
-  board.forEach((row, r) => {
-    return row.forEach((value, c) => {
-      return drawSquare(c, r, value);
-    });
-  });
 }
 
 function randomElement() {
